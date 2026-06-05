@@ -1,3 +1,5 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
+title: "analysis-power_outages"
+description: "This project analyzes power outages around the United States. For DSC 80 at University of California, San Diego"
