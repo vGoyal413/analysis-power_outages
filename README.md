@@ -1,9 +1,3 @@
-# \# analysis-power\_outages
-
-# This project analyzes power outages around the United States. For DSC 80 at University of California, San Diego
-
-# 
-
 # \*\*Name:\*\* Vedika Goyal
 
 # 
