@@ -1,4 +1,4 @@
-# \*\*Name:\*\* Vedika Goyal
+# Name: Vedika Goyal
 
 # 
 
