@@ -99,6 +99,7 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 The baseline model is a decision tree regressor with a maximum depth of 2. The only feature is `MONTH`. Since `MONTH` contains quantitative values, it requires no encoding.
 - **Training RMSE:** 5334.73 minutes
 - **Testing RMSE:** 7778.44 minutes
+  
 The model does not perform very well. However, that is expected since this is only a baseline model. The final model will require significant improvements.
 
 ## Final Model
