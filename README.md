@@ -80,8 +80,16 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 - **Observed Difference:** 862.82 minutes
 - **P-value:** 0.0166
 - **Conclusion:** Since the p-value < 0.05, the null hypothesis is rejected. The data suggests that outages tend to last longer in winter than in summer. However, it is important to note that the reason that outages last longer in the winter cannot be concluded.
-## Framing a Prediction Problem
 
+
+
+## Framing a Prediction Problem
+**Prediction Problem:** Predict how long a power outage lasts (`OUTAGE.DURATION`) in minutes.
+**Type:** Regression
+**Evaluation Metric:** Root Mean Squared Error (RMSE)
+- Used to measure how far off predictions are (in minutes).
+- Larger errors get weighted more heavily, which makes it a good value to predict the outage duration.
+**Features Used During Prediction:** `MONTH`, `CLIMATE.REGION` , `CAUSE.CATEGORY`, `ANOMALY.LEVEL`, and `CLIMATE.CATEGORY`. These features would all be known at the beginning of an outage.
 ## Baseline Model
 
 ## Final Model
