@@ -100,7 +100,7 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 - `CAUSE.CATEGORY`
 - `ANOMALY.LEVEL`
 `CLIMATE.CATEGORY`
-- These features would all be known at the beginning of an outage.
+  These features would all be known at the beginning of an outage.
 
 ## Baseline Model
 The baseline model is a decision tree regressor with a maximum depth of 2. The only feature is `MONTH`. Since `MONTH` contains quantitative values, it requires no encoding.
