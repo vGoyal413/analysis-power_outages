@@ -55,6 +55,14 @@ The pivot table below shows the number of outages per month in each climate regi
 | South | 16 | 15 | 13 | 27 | 23 | 31 | 23 | 32 | 18 | 9 | 6 | 14 |
 
 ## Assessment of Missingness
+### NMAR Analysis
+The `OUTAGE.DURATION` column may be Not Missing At Random (NMAR) becaues any outages that were ongoing when the data was collected would not have a recorded duration time.
+### Missingness Dependency
+Permutation tests were used to determine whether or not missingness of `OUTAGE.DURATION` depends on any other columns. The test statistic of choice was TVD.
+- **Dependent on `CAUSE.CATEGORY`:** Observed TVD = 0.1636, p-value = 0.0. Since the p-value is below 0.05, it can be concluded that the missingness of `OUTAGE.DURATION` is dependent`CAUSE.CATEGORY`.
+- **Independent of `MONTH`:** Observed TVD = 0.0909, p-value = 0.2574. Since the p-value is above 0.05, we conclude that the missingness of `OUTAGE.DURATION` is independent of `MONTH`.
+
+
 
 ## Hypothesis Testing
 
