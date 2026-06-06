@@ -7,7 +7,7 @@ The dataset consists of information about major power outages around the contine
 
 **Question: When do major power outages tend to occur?**
 
-Understanding when outages are most likely to happen helps in managing utility planning and emergency response. The relevant columns are:
+Understanding when outages are most likely to happen helps in making emergency response as efficient as possible. The relevant columns are:
 
 | Column | Description |
 |--------|-------------|
@@ -23,7 +23,9 @@ Understanding when outages are most likely to happen helps in managing utility p
 ## Data Cleaning and Exploratory Data Analysis
 
 Multiple steps were required to clean the raw dataset:
-- Two individual columns (date and time) were combined into single datetime columns: `OUTAGE.START` and `OUTAGE.RESTORATION`.
+- Two individual columns (date and time) were combined into single datetime columns:
+  - `OUTAGE.START`
+  - `OUTAGE.RESTORATION`  
 - The original individual columns were dropped.
 - Any metadata rows that were not relevant for the analysis were dropped.
 
@@ -92,7 +94,12 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 - Used to measure how far off predictions are (in minutes).
 - Larger errors get weighted more heavily, which makes it a good value to predict the outage duration.
 
-**Features Used During Prediction:** `MONTH`, `CLIMATE.REGION` , `CAUSE.CATEGORY`, `ANOMALY.LEVEL`, and `CLIMATE.CATEGORY`.
+**Features Used During Prediction:**
+- `MONTH`
+- `CLIMATE.REGION`
+- `CAUSE.CATEGORY`
+- `ANOMALY.LEVEL`
+`CLIMATE.CATEGORY`
 - These features would all be known at the beginning of an outage.
 
 ## Baseline Model
@@ -118,7 +125,7 @@ The final model is a decision tree regressor with more than one feature (unlike 
   - **Training RMSE:** 4794.97 minutes
   - **Testing RMSE:** 7259.14 minutes
  
-  The final model improved the testing RMSE by 519.3 minutes compared to the baseline model. The added on features help make a better prediction because they give the model a better understanding of the conditions.
+The final model improved the testing RMSE by 519.3 minutes compared to the baseline model. The added on features help make a better prediction because they give the model a better understanding of the conditions.
 
 
   
