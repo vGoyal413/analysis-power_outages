@@ -93,7 +93,7 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 - Larger errors get weighted more heavily, which makes it a good value to predict the outage duration.
 
 **Features Used During Prediction:** `MONTH`, `CLIMATE.REGION` , `CAUSE.CATEGORY`, `ANOMALY.LEVEL`, and `CLIMATE.CATEGORY`.
--These features would all be known at the beginning of an outage.
+- These features would all be known at the beginning of an outage.
 
 ## Baseline Model
 
