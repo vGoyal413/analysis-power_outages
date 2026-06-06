@@ -22,6 +22,19 @@ Understanding when outages are most likely to happen helps in managing utility p
 
 ## Data Cleaning and Exploratory Data Analysis
 
+<iframe
+  src="assets/outages-by-month.html"
+  width="800"
+  height="500"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/outages-by-region.html"
+  width="800"
+  height="500"
+  frameborder="0"
+></iframe>
 ## Assessment of Missingness
 
 ## Hypothesis Testing
