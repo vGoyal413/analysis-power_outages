@@ -59,13 +59,27 @@ The pivot table below shows the number of outages per month in each climate regi
 The `OUTAGE.DURATION` column may be Not Missing At Random (NMAR) becaues any outages that were ongoing when the data was collected would not have a recorded duration time.
 ### Missingness Dependency
 Permutation tests were used to determine whether or not missingness of `OUTAGE.DURATION` depends on any other columns. The test statistic of choice was TVD.
-- **Dependent on `CAUSE.CATEGORY`:** Observed TVD = 0.1636, p-value = 0.0. Since the p-value is below 0.05, it can be concluded that the missingness of `OUTAGE.DURATION` is dependent`CAUSE.CATEGORY`.
-- **Independent of `MONTH`:** Observed TVD = 0.0909, p-value = 0.2574. Since the p-value is above 0.05, we conclude that the missingness of `OUTAGE.DURATION` is independent of `MONTH`.
+- **Dependent on `CAUSE.CATEGORY`:** Observed TVD = 0.1636, p-value = 0.0. Since the p-value < 0.05, it can be concluded that the missingness of `OUTAGE.DURATION` is dependent`CAUSE.CATEGORY`.
+- **Independent of `MONTH`:** Observed TVD = 0.0909, p-value = 0.2574. Since the p-value > 0.05, it can be concluded that the missingness of `OUTAGE.DURATION` is independent of `MONTH`.
 
 
 
 ## Hypothesis Testing
+### Test 1: Are outages equally likely to occur each month?
+- **Null Hypothesis:** Outages are equally likely to occur during each month.
+- **Alternate Hypothesis:** Outages are not equally likely to occur during each month.
+- **Test Statistic:** TVD
+- **Observed TVD:** 0.1086
+- **P-value:** 0.0
+- **Conclusion:** Since the p-value < 0.05, the null hypothesis is rejected. The data suggests that the occurence of outages is not equally likely to occur during each month.
 
+### Test 2: Do outages last longer in winter than in the summer?
+- **Null Hypothesis:** Outages last the same amount of time in summer and winter.
+- **Alternative Hypothesis:** Outages last longer in winter (Dec–Feb) than in summer (Jun–Aug).
+- **Test Statistic:** Difference in mean outage duration (Winter months − Summer months)
+- **Observed Difference:** 862.82 minutes
+- **P-value:** 0.0166
+- **Conclusion:** Since the p-value < 0.05, the null hypothesis is rejected. The data suggests that outages tend to last longer in winter than in summer. However, it is important to note that the reason that outages last longer in the winter cannot be concluded.
 ## Framing a Prediction Problem
 
 ## Baseline Model
