@@ -99,7 +99,8 @@ Permutation tests were used to determine whether or not missingness of `OUTAGE.D
 - `CLIMATE.REGION`
 - `CAUSE.CATEGORY`
 - `ANOMALY.LEVEL`
-`CLIMATE.CATEGORY`
+- `CLIMATE.CATEGORY`
+
   These features would all be known at the beginning of an outage.
 
 ## Baseline Model
