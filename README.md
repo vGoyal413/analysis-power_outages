@@ -27,7 +27,7 @@ Multiple steps were required to clean the raw dataset:
 - The original individual columns were dropped.
 - Any metadata rows that were not relevant for the analysis were dropped.
 
-The bar chart below shows the number of outages per month. Summer months (June, July, August) tend to have more outages than winter months (December, January, February).
+The bar chart below shows the number of outages per month. Summer months (June, July, August) tend to have more outages than winter months (December, January, February):
 
 
 <iframe
@@ -43,6 +43,17 @@ The bar chart below shows the number of outages per month. Summer months (June, 
   height="500"
   frameborder="0"
 ></iframe>
+
+The pivot table below shows the number of outages per month in each climate region:
+
+| CLIMATE.REGION | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Central | 26 | 10 | 5 | 15 | 22 | 36 | 30 | 21 | 7 | 8 | 10 | 9 |
+| East North Central | 12 | 5 | 10 | 11 | 10 | 21 | 21 | 13 | 9 | 7 | 9 | 10 |
+| Northeast | 33 | 36 | 26 | 19 | 26 | 42 | 39 | 31 | 22 | 43 | 18 | 14 |
+| Northwest | 14 | 13 | 12 | 10 | 7 | 11 | 13 | 14 | 7 | 4 | 7 | 20 |
+| South | 16 | 15 | 13 | 27 | 23 | 31 | 23 | 32 | 18 | 9 | 6 | 14 |
+
 ## Assessment of Missingness
 
 ## Hypothesis Testing
