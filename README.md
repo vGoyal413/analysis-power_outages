@@ -107,7 +107,9 @@ The final model is a decision tree regressor with more than one feature (unlike 
 - `CLIMATE.CATEGORY` (categorical)
 - `CAUSE.CATEGORY` (categorical)
 - `ANOMALY.LEVEL ` (quantitative)
+
   The three categorical features needed to be encoded. This was done using the *OneHotEncoder*
+
   Additionally, *GridSearchCV* was used to find the best parameters for the final model.
   - **Best Parameters:**
     - **Maximum Depth:** 2
