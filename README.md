@@ -22,6 +22,14 @@ Understanding when outages are most likely to happen helps in managing utility p
 
 ## Data Cleaning and Exploratory Data Analysis
 
+Multiple steps were required to clean the raw dataset:
+- Two individual columns (date and time) were combined into single datetime columns: `OUTAGE.START` and `OUTAGE.RESTORATION`.
+- The original individual columns were dropped.
+- Any metadata rows that were not relevant for the analysis were dropped.
+
+The bar chart below shows the number of outages per month. Summer months (June, July, August) tend to have more outages than winter months (December, January, February).
+
+
 <iframe
   src="assets/outages-by-month.html"
   width="800"
