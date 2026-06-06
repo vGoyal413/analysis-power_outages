@@ -124,11 +124,19 @@ The final model is a decision tree regressor with more than one feature (unlike 
   
 ## Fairness Analysis
 **Group X:** Summer Outages (June, July, August)
+
 **Group Y:** Winter Outages (December, January, February)
+
 **Evaluation Metric:** RMSE
+
 **Null Hypothesis:** The model is fair. Difference in RMSE between summer and winter months are due to random chance.
+
 **Alternate Hypothesis:** The model is unfair. The model behaves differently between summer and winter months.
+
 **Test Statistic:** Difference in RMSE (Summer - Winter) -> (4168.84 - 6769.92)
+
 **Observed Difference:** -2601.08
+
 **P-Value:** 0.8449
+
 **Conclusion:** Since the p-value > 0.05, the null hypothesis does not get rejected. The model is fair and any differences in the RMSE between summer and winter months is due to random chance.
