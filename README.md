@@ -102,5 +102,18 @@ The baseline model is a decision tree regressor with a maximum depth of 2. The o
 The model does not perform very well. However, that is expected since this is only a baseline model. The final model will require significant improvements.
 
 ## Final Model
-
+The final model is a decision tree regressor with more than one feature (unlike the baseline model). The added features are:
+- `CLIMATE.REGION` (categorical)
+- `CLIMATE.CATEGORY` (categorical)
+- `CAUSE.CATEGORY` (categorical)
+- `ANOMALY.LEVEL ` (quantitative)
+  The three categorical features needed to be encoded. This was done using the *OneHotEncoder*
+  Additionally, *GridSearchCV* was used to find the best parameters for the final model.
+  - **Best Parameters:**
+    - **Maximum Depth:** 2
+    - **Minimum Samples Split:** 2
+  - **Training RMSE:** 4794.97 minutes
+  - **Testing RMSE:** 7259.14 minutes
+ 
+  The final model improved the testing RMSE by 519.3 minutes compared to the baseline model. The added on features help make a better prediction because they give the model a better understanding of the conditions.
 ## Fairness Analysis
